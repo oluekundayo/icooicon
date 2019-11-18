@@ -1,0 +1,387 @@
+$lt-gray: #ddd;
+$background-dark: #1E2022;
+$background-light: #F0F5F9;
+$background-pale: #C9D6DF;
+$background-lt-dark: #52616B;
+
+//Height Variable
+$carousel-item-height: 300px;
+
+// @mixin zero-margin($pad-up-dn, $pad-left-right) {
+//     margin: 0px auto;
+//     padding: $pad-up-dn $pad-left-right;
+// }
+@mixin margin($mt-up,$mb-dn,$ml-left,$mr-right) {
+    margin: $mt-up $mb-dn $ml-left $mr-right;
+}
+@mixin padding($pt-up,$pb-dn,$pl-left,$pr-right) {
+    padding: $pt-up $pb-dn $pl-left $pr-right;
+}
+
+// .row-header {
+    
+// }
+
+.row-content {
+    @include padding(50px, 50px, 0px, 0px);
+    @include margin(0px, auto, auto, auto);
+    border-bottom: 1px ridge;
+    min-height: 400px;
+    
+}
+.heades-1 {
+    margin-top: 30px;
+}
+
+.text-fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.icoo-links {
+    font-style: normal;
+    text-transform: capitalize;
+}
+
+.footer {
+    background-color: $background-dark;
+    @include padding(20px, 20px, 0px, 0px);
+    @include margin(0px, auto, auto, auto);
+    color: $background-pale;
+}
+
+.jumbotron {
+    min-height: 98vh;
+    // @include padding(70px, 70px, 30px, 30px);
+    background: $background-dark;
+    color: floralwhite;
+}
+.header-size p {
+    font-size: 50px;
+}
+
+@media all and (orientation:portrait) {
+    .header-size p {
+        font-size: 30px !important;
+    }
+}
+
+address {
+    font-size: 80%;
+    margin: 0px;
+    color: #0f0f0f;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 0;
+}
+
+.navbar-dark {
+    background-color: $background-dark;
+    color: $background-pale;
+    .container-fluid {
+        .logo-links {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            text-transform: capitalize;
+            padding-right: 20px;
+            color: $background-pale;
+            text-decoration-line: line-through;
+        }
+        .logo-links:hover {
+            color: $background-lt-dark;
+  
+            -webkit-transition: all 1.0s;
+            -o-transition: all 1.0s;
+            -moz-transition: all 1.0s;
+            transition: all 1.0s;
+        }
+    }
+}
+
+.btn-pale {
+    background: $background-pale;
+    color: $background-lt-dark !important;
+}
+.btn-pale:hover, .btn-pale:focus {
+    color: $background-light !important;
+    background: $background-lt-dark;
+    background: -webkit-linear-gradient(left, $background-lt-dark, $background-pale);
+    background: -o-linear-gradient(left, $background-lt-dark, $background-pale);
+    background: -moz-linear-gradient(left, $background-lt-dark, $background-pale);
+    background: linear-gradient(left, $background-lt-dark, $background-pale);
+    opacity: 0.8;
+  
+    -webkit-transition: all 1.0s;
+    -o-transition: all 1.0s;
+    -moz-transition: all 1.0s;
+    transition: all 1.0s;
+
+    
+}
+
+.btn-dark-b {
+    background: $background-dark;
+}
+
+.btn-dark-b:hover, .btn-dark-b:focus {
+    background: $background-lt-dark;
+    -webkit-transition: all 1.0s;
+    -o-transition: all 1.0s;
+    -moz-transition: all 1.0s;
+    transition: all 1.0s;
+}
+
+.color-me {
+    color: $background-pale !important;
+    
+}
+  
+.color-me:hover {
+    color: $background-lt-dark !important;
+  
+    -webkit-transition: all 1.0s;
+    -o-transition: all 1.0s;
+    -moz-transition: all 1.0s;
+    transition: all 1.0s;
+  }
+
+.good {
+    display: -ms-inlinebox;
+    display: inline;
+    list-style: none;
+
+    li .focus {
+        color: $background-pale !important;
+    }
+    
+}
+
+.navbar-bottom {
+    margin-bottom: -15px !important;
+}
+
+.navbar-text {
+    list-style: none;
+}
+
+
+.navbar-bottom .good .nav-link {
+    color: rgba(255, 255, 255, 0.5);
+}
+  
+.navbar-bottom .good .nav-link:hover, .navbar-bottom .good .nav-link:focus {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.change-dark {
+    display: block;
+    border: 1px solid floralwhite;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background: $background-dark;
+}
+
+.change-dark:hover, .change-dark:focus {
+    border: 3px solid $background-lt-dark;
+}
+
+.change-light {
+    display: block;
+    border: 1px solid $background-dark;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background: $background-pale;
+}
+
+.change-light:hover, .change-light:focus {
+    border: 3px solid $background-lt-dark;
+}
+
+.link-style {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    li {
+        a {
+            font-size: 10px;
+            font-weight: bold;
+            color: $background-lt-dark !important;
+            padding-top: 0px !important;
+            padding-bottom: 0px !important;
+            text-transform: capitalize;
+        }
+        a:hover {
+            color: $background-light !important;
+            font-weight: bolder;
+        }
+    }
+}
+
+.no-icons-txt {
+    font-weight: bolder;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: $background-lt-dark;
+    margin-top: 60px;
+    padding-bottom: 10px;
+}
+
+.no-icons-sum {
+    color: $background-lt-dark;
+    font-style: italic;
+}
+.no-icons-card-cover {
+    margin-top: 80px;
+
+    .no-icons-card-label-1 {
+        color: $background-lt-dark;
+        text-transform: uppercase;
+        font-style: italic;
+        font-weight: bolder;
+        
+        strong {
+            padding-bottom: 5px !important;
+        }
+    }
+
+    .no-icons-card-label-2 {
+        color: $background-lt-dark;
+        float: right;
+        font-style: italic;
+        padding: 0px;
+    }
+
+    .no-icons-car-space {
+        margin-bottom: 10vh;
+    }
+
+    .no-icon-dark {
+        background-color: $background-dark;
+    }
+
+    .no-icon-btn {
+        height: 70px;
+        font-style: italic;
+        font-weight: bolder;
+        padding-top: 25px;
+        font-size: 16px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: $background-lt-dark;
+        background-color: $background-pale;
+        border-radius: 10px;
+        margin-bottom: 10vh;
+    }
+    .no-icon-btn:hover, .no-icon-btn:focus {
+        color: $background-pale;
+        background-color: $background-lt-dark;
+
+        -webkit-transition: all 1.0s;
+        -o-transition: all 1.0s;
+        -moz-transition: all 1.0s;
+        transition: all 1.0s;
+    }
+
+    .comment-img {
+        float: right; 
+        @include margin(-70px, -16.5px, -16px, 0px);
+    }
+
+    .comment-body {
+        p {
+            font-size: 20px;
+            font-style: oblique;
+            font-weight: 900;
+            padding-bottom: 20vh;
+            padding-top: 50px;
+
+        }
+    }
+    .comment-name {
+        font-weight: bold !important;
+        text-transform: uppercase;
+        font-size: 15px !important;
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+        margin-bottom: 0px !important;
+    }
+}
+
+.weight-card-cover {
+    margin-top: 80px;
+
+    .weight-label-1 {
+        color: $background-lt-dark;
+        text-transform: uppercase;
+        font-style: italic;
+        font-weight: bolder;
+        
+        strong {
+            padding-bottom: 5px !important;
+        }
+    }
+
+    .weight-label-2 {
+        color: $background-lt-dark;
+        font-style: italic;
+        padding: 0px;
+    }
+
+    .weight-space {
+        margin-bottom: 10vh;
+    }
+
+    .weight-dark {
+        background-color: $background-dark;
+    }
+
+    .weight-btn {
+        height: 70px;
+        font-style: italic;
+        font-weight: bolder;
+        padding-top: 25px;
+        font-size: 16px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: $background-lt-dark;
+        background-color: $background-pale;
+        border-radius: 10px;
+        margin-bottom: 10vh;
+    }
+    .weight-btn:hover, .weight-btn:focus {
+        color: $background-pale;
+        background-color: $background-lt-dark;
+
+        -webkit-transition: all 1.0s;
+        -o-transition: all 1.0s;
+        -moz-transition: all 1.0s;
+        transition: all 1.0s;
+    }
+
+    .weight-comment-img {
+        float: right; 
+        @include margin(-70px, -16.5px, -16px, 0px);
+    }
+
+    .weight-comment-body {
+        p {
+            font-size: 20px;
+            font-style: oblique;
+            font-weight: 900;
+            padding-bottom: 20vh;
+            padding-top: 50px;
+
+        }
+    }
+    .weight-comment-name {
+        font-weight: bold !important;
+        text-transform: uppercase;
+        font-size: 15px !important;
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+        margin-bottom: 0px !important;
+    }
+}
