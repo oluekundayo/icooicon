@@ -11,11 +11,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://oluekundayo@bitbucket.org/oluekundayo/coursera-school.git"
+    "url": "https://github.com/oluekundayo/icooicon.git"
   },
   "author": "",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/oluekundayo/coursera-school#readme",
+  "homepage": "https://oluekundayo.github.io/icooicon/",
   "devDependencies": {
     "lite-server": "^2.5.4",
     "node-sass": "^4.12.0"
