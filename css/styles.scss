@@ -31,6 +31,18 @@ $carousel-item-height: 300px;
 }
 .heades-1 {
     margin-top: 30px;
+    h1{
+        strong{
+            font-family: 'Chiller';
+            font-size: 70px;
+            font-weight: bolder;
+        }
+        span{
+            p{
+                font-family: 'Chiller' !important;
+            }
+        }
+    }
 }
 
 .text-fixed {
@@ -56,7 +68,11 @@ $carousel-item-height: 300px;
 .jumbotron {
     min-height: 98vh;
     // @include padding(70px, 70px, 30px, 30px);
-    background: $background-dark;
+    // background: $background-dark !important;
+    background-image: url('../img/landing.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     color: floralwhite;
 }
 .header-size p {
@@ -76,8 +92,7 @@ address {
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    z-index: 0;
+    font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .navbar-dark {
@@ -224,6 +239,7 @@ body {
 
 .no-icons-txt {
     font-weight: bolder;
+    font-style: italic;
     font-size: 40px;
     text-transform: uppercase;
     color: $background-lt-dark;

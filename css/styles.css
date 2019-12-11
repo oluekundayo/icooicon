@@ -6,6 +6,12 @@
 
 .heades-1 {
   margin-top: 30px; }
+  .heades-1 h1 strong {
+    font-family: 'Chiller';
+    font-size: 70px;
+    font-weight: bolder; }
+  .heades-1 h1 span p {
+    font-family: 'Chiller' !important; }
 
 .text-fixed {
   position: fixed;
@@ -26,7 +32,10 @@
 
 .jumbotron {
   min-height: 98vh;
-  background: #1E2022;
+  background-image: url("../img/landing.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   color: floralwhite; }
 
 .header-size p {
@@ -42,8 +51,7 @@ address {
   color: #0f0f0f; }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  z-index: 0; }
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
 
 .navbar-dark {
   background-color: #1E2022;
@@ -155,6 +163,7 @@ body {
 
 .no-icons-txt {
   font-weight: bolder;
+  font-style: italic;
   font-size: 40px;
   text-transform: uppercase;
   color: #52616B;
