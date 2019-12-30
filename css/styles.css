@@ -29,14 +29,57 @@
   padding: 20px 20px 0px 0px;
   margin: 0px auto auto auto;
   color: #C9D6DF; }
+  .footer .container {
+    margin-top: 5px; }
+  .footer .footer-content {
+    margin-bottom: 8vh !important; }
+    .footer .footer-content .social-icon-color a {
+      color: #F0F5F9 !important; }
+  .footer .logo-links {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+    color: #C9D6DF;
+    margin-bottom: 10vh !important;
+    display: block;
+    margin-top: 5vh !important; }
+  .footer .logo-links:hover {
+    color: #C9D6DF;
+    text-decoration-line: none;
+    -webkit-transition: all 1.0s;
+    -o-transition: all 1.0s;
+    -moz-transition: all 1.0s;
+    transition: all 1.0s; }
+  .footer .copyright-content {
+    width: 100%;
+    text-align: center; }
 
 .jumbotron {
   min-height: 98vh;
+  color: floralwhite; }
+
+.jumbotron-img-1 {
+  background-image: url("../img/icoo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.jumbotron-img-2 {
+  background-image: url("../img/jumbo2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.jumbotron-img-3 {
   background-image: url("../img/landing.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
-  color: floralwhite; }
+  background-size: cover; }
+
+.jumbotron-img-4 {
+  background-image: url("../img/jumbo3.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
 
 .header-size p {
   font-size: 50px; }
@@ -54,21 +97,27 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
 
 .navbar-dark {
-  background-color: #1E2022;
+  background-color: rgba(30, 32, 34, 0.428) !important;
   color: #C9D6DF; }
   .navbar-dark .container-fluid .logo-links {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
     text-transform: capitalize;
     padding-right: 20px;
-    color: #C9D6DF;
-    text-decoration-line: line-through; }
+    color: #C9D6DF; }
   .navbar-dark .container-fluid .logo-links:hover {
-    color: #52616B;
+    color: #C9D6DF;
     -webkit-transition: all 1.0s;
     -o-transition: all 1.0s;
     -moz-transition: all 1.0s;
     transition: all 1.0s; }
+
+.carousel-item .row .col-3 img:hover {
+  transform: scale(2, 2); }
+
+.navbar-dark.scrolled {
+  background-color: #1E2022 !important;
+  transition: background-color 2000ms linear; }
 
 .btn-pale {
   background: #C9D6DF;
